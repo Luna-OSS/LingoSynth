@@ -1,2 +1,2 @@
-# lingosynth
-LingoSynth is an AI 
+# LingoSynth 
+LingoSynth is a free AI rephrasing & facts checking tool.
