@@ -7,9 +7,21 @@ div.alert
     border-left: 0.5rem solid $accent
     background: $surface1
     transition: opacity 0.5s ease-in-out
+    position: relative
 
     &.effect
         opacity: 0
 
     &.error
         border-left-color: $red
+
+    i.ti.ti-x
+        position: absolute
+        top: 0.5rem
+        right: 0.5rem
+        font-size: 1.5rem
+        cursor: pointer
+        transition: color 0.1s ease-in-out
+
+        &:hover
+            color: $red

@@ -3,12 +3,11 @@ import openai
 
 from dotenv import load_dotenv
 
-import prompts
-
 load_dotenv()
 
 if os.getenv('OPENAI_API_BASE'):
     openai.api_base = os.getenv('OPENAI_API_BASE')
+
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 MODEL = os.getenv('OPENAI_CHAT_MODEL') or 'gpt-3.5-turbo'
@@ -19,9 +18,8 @@ def generate(messages: str):
     return openai.ChatCompletion.create(
         model=MODEL,
         messages=messages,
-        temperature=0.9
-    ).choices[0].message.content
+        temperature=0.9,
+        frequency_penalty=0.2,
+        presence_penalty=0.6,
 
-if __name__ == '__main__':
-    print(prompts.MESSAGES)
-    # print(generate(prompts.MESSAGES))
+    ).choices[0].message.content

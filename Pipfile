@@ -11,6 +11,7 @@ waitress = "*"
 flask-limiter = "*"
 authlib = "*"
 requests = "*"
+openai = "*"
 
 [dev-packages]
 

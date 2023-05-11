@@ -1,5 +1,6 @@
-import time
 import flask
+
+from . import ai, prompts
 
 def register(app: flask.Flask):
     @app.route('/api/rephrase', methods=['GET', 'POST'])
@@ -7,11 +8,14 @@ def register(app: flask.Flask):
     def api_rephrase():
         text = flask.request.args.get('text') or flask.request.json.get('text')
 
-        time.sleep(3)
-        raise
+        messages = prompts.MESSAGES
+        messages.append({
+            'role': 'user',
+            'content': text
+        })
 
         return flask.jsonify(
             {
-                'text': 'Done.'
+                'text': ai.generate(messages)
             }
         )

@@ -11,7 +11,7 @@ header p {
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(45deg, #a6da95, #3f8a90);
+  background: -webkit-linear-gradient(45deg, #a6da95, #2bafb9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=landing.css.map */

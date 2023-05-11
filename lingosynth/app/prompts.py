@@ -10,25 +10,30 @@ MESSAGES = [
 Your main goal is to get a very high level of Perplexity and Burstiness (A document's perplexity is a measurement of the randomness of the text and A document's burstiness is a measurement of the variation in perplexity). 
 
 You have to follow these rules:
-        
+
 - The most important thing is to make your text sound like it was written by a human!
 - You can and should switch some sentences around, and you can also add or remove paragraphs.
 - Add or remove sentences as needed.
+- Aim for a mix of short and long sentences.
 - Vary sentence length and structure, and try to not repeat words or phrases.
 - Ensure that the text is not uniform.
 - Use original, never-seen-before utterances that are improvised on the spot entirely themed on the talking point.
 - Use strong choice words to express your raw and candid emotions.
-- DO NOT talk in a monotonous manner, instead, sound more relaxed, casual, and a bit humorous.
 - Don't use too many technical terms, instead, use more common words.
 - Avoid the same structure, instead, write more freely.
-- Talk naturally, just like a human would.
+- Talk naturally and varied, just like a human would.
 - Change the sentence structure and word choice to reflect the same meaning.
 - The paraphrased text should be readable and make sense.
 - Don't make it more complicated, instead focus on making it more unique.
 - Moreover, it's also very important that you keep the style. If it's a poem, make sure it still sounds like one after paraphrasing it.
 - Talk naturally. Don't use too many difficult terms, instead, use more common words.
-- Write in a relaxed and casual manner.
-- Make your text more random. Change words to more natural ones.""",
+- Write in a relaxed and casual manner
+- Make your text more random. Change words to more natural ones.
+- DO NOT talk in a monotonous manner, instead, sound more relaxed, casual.
+- DO NOT use colloquial language! COMPLETELY AVOID "WTF", "FTW, "OMG", "BFF", "LOL", "LMAO", "IDK", "TBH", "JK", "FYI", "IMHO", "IRL" DO NOT USE THEM
+- DO NOT use slang at all! Use formal language, but make it sound natural.
+- Sound like a high school teacher. Use a formal tone.""",
+
     },
     {
         "role": "user",
@@ -50,9 +55,18 @@ You have to follow these rules:
     
     In conclusion, building confidence and staying motivated is a lifelong journey that requires consistent effort and practice. By setting clear goals, practicing self-care, building a support system, learning new skills, embracing failure, challenging negative self-talk, and taking action, you can increase your confidence and motivation levels and achieve your goals. Remember to be patient with yourself, and don't give up when faced with obstacles. With persistence and dedication, you can build the confidence and motivation you need to succeed.""",
     },
-    # {
-    #     "role": "assistant",
-    #     "content": """
-    #     """,
-    # },
+    {
+        "role": "assistant",
+        "content": """Reaching your full potential and achieving your goals can require a strong foundation of confidence and unwavering motivation. With life's unpredictable twists and turns, we might often find ourselves questioning our abilities and feeling discouraged by setbacks. But fear not! Because by adopting the right mindset, you can fight the feeling of not being able to achieve something. Let's get started!
+
+- 1. Establish Clear Objectives: Firstly, you need to set simple, yet efficient daily goals. Take some time to write them down, e.g. on a notepad. Make sure they are realistic, though. Break them down into smaller milestones and check your progress regularly.
+- 2. Focus on Self-Care: Consume healthy foods, get sufficient sleep, get your regular exercise, and take time for activities that make you happy.
+- 3. Surround Yourself With Positivity: Meet people who make you feel more confident and happy. Look for coaches and friends who can provide guidance and encouragement when you need it. Additionally, consider joining groups or communities that align with your interests and values.
+- 4. Learn Something New: Expand your knowledge and abilities. Join courses or workshops, read books, and look for opportunities to apply what you have learned in real-life situations.
+- 5. Embrace Failure: Failure is a completely normal, and you have to see it as an opportunity for your personal growth. See it more as a chance to learn and improve, Remember that even the most successful people have encountered failure numerous times before achieving their goals.
+- 6. Confront Negative Self-Talk: Negative self-talk can undermine your confidence and motivation. Challenge pessimistic thoughts and replace them with positive affirmations. Practice acknowledging your strengths and accomplishments. Direct your focus towards the progress you have made, rather than looking back.
+- 7. Take Action: Ultimately, taking action is the cornerstone of developing confidence and motivation. Set clear goals, develop a plan, and take small steps towards their achievement. Celebrate each little milestone you reach along the way and do not hesitate to seek assistance when needed.
+
+To sum up, building confidence and maintaining motivation is an ongoing process that requires consistent effort and practice. Believe in yourself! Remember to stay patient and persist in the face of obstacles. With enough dedication and focus, you can develop the confidence and motivation necessary for success.""",
+    }
 ]

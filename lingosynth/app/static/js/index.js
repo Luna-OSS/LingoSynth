@@ -34,11 +34,20 @@ function rephrase() {
         stopRephrasing();
         console.error('Error:', error);
 
+        popups.innerHTML = '';
+
         const errorDiv = document.createElement('div');
         errorDiv.className = 'error alert';
         errorDiv.innerText = 'An error occurred. Please try again later.';
         popups.appendChild(errorDiv);
 
+        const closeButton = document.createElement('i');
+        closeButton.className = 'ti ti-x';
+        closeButton.addEventListener('click', function() {
+            errorDiv.remove();
+        }
+        );
+        errorDiv.appendChild(closeButton);
     });
 };
 

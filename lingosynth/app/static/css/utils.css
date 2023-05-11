@@ -5,10 +5,22 @@ div.alert {
   border-left: 0.5rem solid #268678;
   background: #494d64;
   transition: opacity 0.5s ease-in-out;
+  position: relative;
 }
 div.alert.effect {
   opacity: 0;
 }
 div.alert.error {
   border-left-color: #ed8796;
+}
+div.alert i.ti.ti-x {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+div.alert i.ti.ti-x:hover {
+  color: #ed8796;
 }/*# sourceMappingURL=utils.css.map */

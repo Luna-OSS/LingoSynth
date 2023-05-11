@@ -1,7 +1,6 @@
 """Flask app for the backend of the project."""
 
 import flask
-import authlib
 import flask_cors
 import flask_limiter
 
