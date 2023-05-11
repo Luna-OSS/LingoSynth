@@ -1,0 +1,32 @@
+@import '_vars'
+
+html
+    scroll-behavior: smooth
+
+body
+    margin: 1rem
+    background-color: $base
+
+*
+    color: $text
+    border: none
+    outline: none
+    box-sizing: border-box
+    font-family: 'Inter', sans-serif
+
+nav, header, main, footer
+    max-width: 800px
+    margin: 0 auto
+
+nav
+    a
+        opacity: 0.8
+        text-decoration: none
+        margin-right: 1rem
+
+        &:hover
+            opacity: 1
+
+footer
+    margin-top: 2rem
+    opacity: 0.5

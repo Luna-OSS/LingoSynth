@@ -1,0 +1,36 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".vscode": true,
+        "frontend/node_modules": true,
+        "lingosynth/app/static/css/main.css.map": true,
+        "lingosynth/app/static/css/main.css": true,
+        "lingosynth/app/static/css/input.css": true,
+        "lingosynth/app/static/css/input.css.map": true,
+        "lingosynth/app/__pycache__": true,
+        "lingosynth/__pycache__": true,
+        "lingosynth/app/static/css/utils.css.map": true,
+        "lingosynth/app/static/css/utils.css": true,
+        "lingosynth/app/static/css/landing.css.map": true,
+        "lingosynth/app/static/css/landing.css": true
+    },
+    "hide-files.files": [
+        ".vscode",
+        "frontend/node_modules",
+        "lingosynth/app/static/css/main.css.map",
+        "lingosynth/app/static/css/main.css",
+        "lingosynth/app/static/css/input.css",
+        "lingosynth/app/static/css/input.css.map",
+        "lingosynth/app/__pycache__",
+        "lingosynth/__pycache__",
+        "lingosynth/app/static/css/utils.css.map",
+        "lingosynth/app/static/css/utils.css",
+        "lingosynth/app/static/css/landing.css.map",
+        "lingosynth/app/static/css/landing.css"
+    ]
+}

@@ -1,0 +1,14 @@
+div.alert {
+  margin-block: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 0.5rem solid #268678;
+  background: #494d64;
+  transition: opacity 0.5s ease-in-out;
+}
+div.alert.effect {
+  opacity: 0;
+}
+div.alert.error {
+  border-left-color: #ed8796;
+}/*# sourceMappingURL=utils.css.map */

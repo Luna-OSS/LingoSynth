@@ -1,0 +1,17 @@
+header {
+  margin-block: 3rem 6rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 46px;
+}
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(45deg, #a6da95, #3f8a90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=landing.css.map */

@@ -1,0 +1,50 @@
+{% extends "components/base.html" %}
+
+{% block header %}
+<header>
+    <h1>
+        Write more accurately and efficiently with <span class="gradient-text">LingoSynth</span>.
+    </h1>
+    <p>
+        Stop worrying about plagiarism and start focusing on your productivity now with LingoSynth.
+        It's <span class="gradient-text">free</span> and works <span class="gradient-text">without an account</span>!
+    </p>
+    <a href="#get-started">
+        <button>
+            Get started
+        </button>
+    </a>
+</header>
+{% endblock %}
+
+{% block content %}
+    <h2>Try it now!</h2>
+    <p>No account required.</p>
+
+    <div id="popups"></div>
+    <div id="get-started"></div>
+
+    <div class="input-wrapper" id="textWrapper">
+        <textarea
+            id="textBox"
+            name="text"
+            rows="4" cols="50"
+            placeholder="Enter text here..."
+            style="resize: vertical; overflow: auto;"
+            autofocus
+            autocapitalize="true"
+            autocomplete="on"
+            autocorrect="on"
+            spellcheck="true"
+        >Your text here...</textarea>
+    </div>
+
+    <button id="rephraseButton" onclick="rephrase()">
+        <i id="rephraseIcon" class="ti ti-language"></i>
+        Rephrase
+    </button>
+
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/index.js"></script>
+{% endblock %}

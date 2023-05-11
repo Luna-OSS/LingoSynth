@@ -1,0 +1,15 @@
+@import '_vars'
+
+div.alert
+    margin-block: 1rem
+    padding: 1rem
+    border-radius: 0.5rem
+    border-left: 0.5rem solid $accent
+    background: $surface1
+    transition: opacity 0.5s ease-in-out
+
+    &.effect
+        opacity: 0
+
+    &.error
+        border-left-color: $red
