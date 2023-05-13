@@ -2,6 +2,10 @@ function stopRephrasing() {
     rephraseButton.classList.remove('loading');
     textWrapper.classList.remove('loading');   
     rephraseIcon.className = 'ti ti-language'; 
+
+    copyButton.classList.remove('done');
+    copyIcon.className = 'ti ti-clipboard';
+    copyText.innerText = 'Copy';
 }
 
 function rephrase() {
@@ -38,7 +42,7 @@ function rephrase() {
 
         const errorDiv = document.createElement('div');
         errorDiv.className = 'error alert';
-        errorDiv.innerText = 'An error occurred. Please try again later.';
+        errorDiv.innerText = 'Sorry, an error has occurred. Please try again later.';
         popups.appendChild(errorDiv);
 
         const closeButton = document.createElement('i');
@@ -55,4 +59,19 @@ document.addEventListener('keydown', function(event) {
     if (event.ctrlKey && event.keyCode === 13) {
         rephrase();
     }
+});
+
+function copy() {
+    textBox.select();
+    document.execCommand('copy');
+    textBox.setSelectionRange(0, 0);
+    textBox.blur();
+
+    copyButton.classList.add('done');
+    copyIcon.className = 'ti ti-clipboard-check';
+    copyText.innerText = 'Copied';
+}
+
+const easymde = new EasyMDE({
+    element: textBox,
 });

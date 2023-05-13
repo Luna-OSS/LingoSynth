@@ -19,7 +19,7 @@
 
 {% block content %}
     <h2>Try it now!</h2>
-    <p>No account required.</p>
+    <p>No account required. Just paste the text you want to be rephrased!</p>
 
     <div id="popups"></div>
     <div id="get-started"></div>
@@ -43,8 +43,12 @@
         <i id="rephraseIcon" class="ti ti-language"></i>
         Rephrase
     </button>
+    <button class="secondary" id="copyButton" onclick="copy()">
+        <i id="copyIcon" class="ti ti-clipboard"></i>
+        <span id="copyText">Copy</span>
+    </button>
     <p>This can take several minutes for longer texts!</p>
-    <p>Feel free to visit another browser tab if you want to.</p>
+    <p>Feel free to visit another browser tab if you want to. Just don't close this tab.</p>
 
 {% endblock %}
 {% block scripts %}

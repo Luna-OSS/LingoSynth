@@ -1,4 +1,5 @@
 import flask
+import time
 
 from . import ai, prompts
 
@@ -14,8 +15,14 @@ def register(app: flask.Flask):
             'content': text
         })
 
+
+        try:
+            generated = ai.generate(messages)
+        except Exception:
+            return flask.Response('Sorry, an error has occurred!', status=500)
+
         return flask.jsonify(
             {
-                'text': ai.generate(messages)
+                'text': generated
             }
         )

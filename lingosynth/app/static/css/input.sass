@@ -24,9 +24,27 @@
 div.input-wrapper
     position: relative
     overflow: hidden
+
     background: $surface0
+
     padding: 2px 3px
     border-radius: 0.5rem
+
+    *
+        border-color: $surface0 !important
+
+    .CodeMirror
+        background: $surface1
+
+    .CodeMirror-wrap:first-child
+        background: green !important
+
+    *::selection
+        background: $accent
+        color: $text
+
+    .CodeMirror-cursors
+        filter: invert(1)
 
     &.loading
         cursor: wait !important
@@ -47,13 +65,14 @@ div.input-wrapper
             right: 1rem
             bottom: 1rem
 
-            background-image: conic-gradient(from 0deg, $accent, $yellow, $accent)
+            background-image: conic-gradient(from 0deg, $teal, $yellow, $peach)
             animation: rotate-gradient 1s linear infinite
 
 textarea
     width: 100%
-    height: 300px
-    font-size: 1.5rem
+    height: 400px
+    font-size: 16px
+    line-height: 1.5
     padding: 1rem
     border-radius: 0.5rem
     background: $surface0
@@ -81,9 +100,20 @@ button
         background: $accent
 
     &.loading
-        cursor: wait
+        cursor: progress
         animation: pulsing 1s ease-in-out infinite alternate
-        // pointer-events: none
+
+    &.secondary
+        background: $surface2
+
+        &:hover
+            background: $overlay0
+
+    &.done
+        background: $alt
+
+        &:hover
+            background: $alt-light
 
 i.ti.ti-loader-2
     display: inline-block

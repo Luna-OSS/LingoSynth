@@ -29,6 +29,22 @@ div.input-wrapper {
   padding: 2px 3px;
   border-radius: 0.5rem;
 }
+div.input-wrapper * {
+  border-color: #363a4f !important;
+}
+div.input-wrapper .CodeMirror {
+  background: #494d64;
+}
+div.input-wrapper .CodeMirror-wrap:first-child {
+  background: green !important;
+}
+div.input-wrapper *::selection {
+  background: #268678;
+  color: #eaedf7;
+}
+div.input-wrapper .CodeMirror-cursors {
+  filter: invert(1);
+}
 div.input-wrapper.loading {
   cursor: wait !important;
   position: relative;
@@ -46,14 +62,15 @@ div.input-wrapper.loading::before {
   left: 1rem;
   right: 1rem;
   bottom: 1rem;
-  background-image: conic-gradient(from 0deg, #268678, #eed49f, #268678);
+  background-image: conic-gradient(from 0deg, #2bafb9, #eed49f, #f5a97f);
   animation: rotate-gradient 1s linear infinite;
 }
 
 textarea {
   width: 100%;
-  height: 300px;
-  font-size: 1.5rem;
+  height: 400px;
+  font-size: 16px;
+  line-height: 1.5;
   padding: 1rem;
   border-radius: 0.5rem;
   background: #363a4f;
@@ -79,8 +96,20 @@ button:hover {
   background: #268678;
 }
 button.loading {
-  cursor: wait;
+  cursor: progress;
   animation: pulsing 1s ease-in-out infinite alternate;
+}
+button.secondary {
+  background: #5b6078;
+}
+button.secondary:hover {
+  background: #6e738d;
+}
+button.done {
+  background: #2c589f;
+}
+button.done:hover {
+  background: #3866b0;
 }
 
 i.ti.ti-loader-2 {

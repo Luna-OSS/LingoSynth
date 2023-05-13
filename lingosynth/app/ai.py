@@ -18,8 +18,8 @@ def generate(messages: str):
     return openai.ChatCompletion.create(
         model=MODEL,
         messages=messages,
-        temperature=0.9,
-        frequency_penalty=0.2,
-        presence_penalty=0.6,
+        temperature=0.8,
+        frequency_penalty=0.0,
+        presence_penalty=2,
 
     ).choices[0].message.content
